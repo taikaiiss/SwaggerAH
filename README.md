@@ -77,7 +77,8 @@ pip install requests loguru selenium openpyxl urllib3
 - 若需要解析 swagger-ui HTML：
   - 安装 Chrome 与匹配版本 ChromeDriver（一般都用chrome问题不大）
   - 将驱动置于项目根目录（Windows 可用 `chromedriver.exe`，其他平台放置 `chromedriver` 并赋执行权限）测试过win+linux没问题，mac都自己试下
-  - chromedriver建议都自己下载，官网地址附上：https://googlechromelabs.github.io/chrome-for-testing/
+  - chromedriver建议都自己下载，避免钓鱼，py文件同目录下即可；
+  - 官网地址附上：https://googlechromelabs.github.io/chrome-for-testing/
 
 ---
 
